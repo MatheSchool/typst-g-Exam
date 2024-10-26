@@ -7,7 +7,7 @@
       let (sugar, ..rest) = it.text.split("?")
 
       if sugar == "=" {        
-        g-question[]
+        question[]
       }
       else {
         [#it]
@@ -18,7 +18,7 @@
       let (sugar, ..rest) = it.text.split("?")
 
       if sugar == "=" {
-        g-question[#rest.join("?").trim()]
+        question[#rest.join("?").trim()]
       }
       else {
         [#it]
@@ -30,7 +30,7 @@
 
       if sugar.starts-with("=") {
         let points = float(sugar.slice(1))
-        g-question(points: points)[]
+        question(points: points)[]
       }
       else {
         [#it]
@@ -41,7 +41,7 @@
       let (sugar, ..rest) = it.text.split("?")
       if sugar.starts-with("=") {
         let points = float(sugar.slice(1))
-        g-question(points: points)[#rest.join("?")]
+        question(points: points)[#rest.join("?")]
       }
       else {
         [#it]
@@ -52,7 +52,7 @@
       let (sugar, ..rest) = it.text.split("?")
 
       if sugar == "==" {       
-        g-subquestion[]
+        subquestion[]
       }
       else {
         [#it]
@@ -63,7 +63,7 @@
       let (sugar, ..rest) = it.text.split("?")
 
       if sugar == "==" {
-        g-subquestion[#rest.join("?").trim()]
+        subquestion[#rest.join("?").trim()]
       }
       else {
         [#it]
@@ -75,7 +75,7 @@
 
       if sugar.starts-with("==") {
         let points = float(sugar.slice(2))
-        g-subquestion(points: points)[]
+        subquestion(points: points)[]
       }
       else {
         [#it]
@@ -87,7 +87,7 @@
 
       if sugar.starts-with("==") {
         let points = float(sugar.slice(2))
-        g-subquestion(points: points)[#rest.join("?")]
+        subquestion(points: points)[#rest.join("?")]
       }
       else {
         [#it]
@@ -98,7 +98,7 @@
       let (sugar, ..rest) = it.text.split("!")
 
       if(sugar == "=") {        
-        g-solution[]
+        solution[]
       }
       else {
         [#it]
@@ -109,7 +109,7 @@
       let (sugar, ..rest) = it.text.split("!")
 
       if(sugar == "=") {
-        g-solution[#rest.join("!").trim()]
+        solution[#rest.join("!").trim()]
       }
       else {
         [#it]
@@ -120,7 +120,7 @@
       let (sugar, ..rest) = it.text.split("%")
 
       if(sugar == "=") {        
-        g-clarification[]
+        clarification[]
       }
       else {
         [#it]
@@ -131,7 +131,7 @@
       let (sugar, ..rest) = it.text.split("%")
 
       if(sugar == "=") {
-        g-clarification[#rest.join("%").trim()]
+        clarification[#rest.join("%").trim()]
       }
       else {
         [#it]

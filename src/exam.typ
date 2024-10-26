@@ -5,7 +5,7 @@
 #import "./g-option.typ": *
 #import "./g-solution.typ": *
 #import "./g-clarification.typ": *
-#import "./g-sugar.typ": *
+#import "sugar.typ": *
 
 /// Template for creating an exam.
 /// 
