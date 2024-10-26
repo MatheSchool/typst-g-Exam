@@ -27,7 +27,7 @@ jobs:
         shell: bash
         run: |
           for file in $(ls -1 ./examples/*.typ); do
-            $type compile "$file"
+            $typst compile "$file"
           done
 
       # - name: List Files examples
@@ -82,9 +82,8 @@ jobs:
         shell: bash
         run: |
           for file in $(ls -1 ./test/*.typ); do
-            $type compile "$file"
+            $typst compile "$file"
           done
-
 
       - name: Delete Doc
         run: |
