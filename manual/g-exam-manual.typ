@@ -5,8 +5,8 @@
 #import "./example.typ": *
 
 #import "../src/auxiliary.typ": *
-#import "../src/g-exam.typ": *
-#import "../src/g-question.typ": *
+#import "../src/exam.typ": *
+#import "../src/question.typ": *
 #import "../src/g-solution.typ": *
 
 // Usage:

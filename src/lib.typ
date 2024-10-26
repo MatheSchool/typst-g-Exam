@@ -1,3 +1,3 @@
-#let version = version((0,3,0))
+#let version = version((0,4,0))
 
-#import "g-exam.typ":  g-exam, g-question, g-subquestion, g-option, g-solution, g-clarification
+#import "exam.typ": exam, question, subquestion, option, g-solution, g-clarification, g-exam, g-question, g-subquestion

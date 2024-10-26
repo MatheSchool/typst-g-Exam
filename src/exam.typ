@@ -1,7 +1,7 @@
 #import "@preview/oxifmt:0.2.0": strfmt
 #import "./global.typ" : *
 #import "./auxiliary.typ": *
-#import "./g-question.typ": *
+#import "question.typ": *
 #import "./g-option.typ": *
 #import "./g-solution.typ": *
 #import "./g-clarification.typ": *
@@ -34,7 +34,7 @@
 ///  - question-points-position: (none, left, right): Position of question points.
 ///  - show-solution: (true, false, "space", "spacex2", "spacex3"): Show the solutions.
 ///  - show-draft: (true, false): It shows a draft label in the background.
-#let g-exam(
+#let exam(
   author: (
     name: "",
     email: none,
@@ -198,4 +198,78 @@
   
   [#hide[]<end-g-question-localization>]
   [#hide[]<end-g-exam>]
+}
+
+
+#let g-exam(
+  author: (
+    name: "",
+    email: none,
+    watermark: none
+  ),
+  school: (
+    name: none,
+    logo: none,
+  ),
+  exam-info: (
+    academic-period: none,
+    academic-level: none,
+    academic-subject: none,
+    number: none,
+    content: none,
+    model: none
+  ),
+  language: "en",
+  localization: (
+    grade-table-queston: none,
+    grade-table-total: none,
+    grade-table-points: none,
+    grade-table-calification: none,
+    point: none,
+    points: none,
+    page: none,
+    page-counter-display: none,
+    family-name: none,
+    given-name: none,
+    group: none,
+    date: none
+  ),
+  date: none,
+  keywords: none,
+  clarifications: none,
+  question-text-parameters: none,
+  show-student-data: "first-page",
+  show-grade-table: true,
+  decimal-separator: ".",
+  question-point-position: left,
+  show-solution: true,
+  body,
+) = {
+  assert(show-student-data in (none, true, false, "first-page", "odd-pages"),
+      message: "Invalid show studen data")
+
+  assert(question-point-position in (none, left, right),
+      message: "Invalid question point position")
+
+  assert(decimal-separator in (".", ","),
+      message: "Invalid decimal separator")
+
+  assert(show-solution in (true, false),
+      message: "Invalid show solution value")
+      
+  exam(
+      author: author, 
+      school: school, 
+      exam-info: exam-info, 
+      languaje: language, 
+      localization: localization, 
+      clarifications: clarifications,
+      question-text-parameters: question-text-parameters, 
+      question-points-position: question-point-position, 
+      show-student-data: show-student-data,
+      show-grade-table: show-grade-table,
+      decimal-separator: decimal-separator,
+      question-point-position: question-point-position, 
+      show-solution: show-solution,
+      )[body]
 }

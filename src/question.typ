@@ -10,7 +10,7 @@
 /// - points (none, float): Points of the question.
 /// - points-position (none, left, right): Position of points. If none,  use the position defined in G-Exam. 
 /// - body (string, content): Body of question.
-#let g-question(
+#let question(
     points: none,
     points-position: none,
     body) = {
@@ -79,7 +79,7 @@
 /// - points (none, float): Points of the sub-question.
 /// - points-position (none, left, right): Position of points. If none,  use the position defined in G-Exam. 
 /// - body (string, content): Body of sub-question.
-#let g-subquestion(
+#let subquestion(
     points: none, 
     points-position: none, 
     body) = {
@@ -151,3 +151,29 @@
     }
   }
 }
+
+#let g-question(
+    points: none, 
+    point: none,
+    points-position: none, 
+    body) = {
+      if points == none {
+        question(points: point, points-position: points-position)[#body]  
+      }
+      else {
+        question(points: points, points-position: points-position)[#body]
+      }
+    }
+
+#let g-subquestion(
+    points: none, 
+    point: none,
+    points-position: none, 
+    body) = {
+            if points == none {
+        subquestion(points: point, points-position: points-position)[#body]  
+      }
+      else {
+        subquestion(points: points, points-position: points-position)[#body]
+      }
+    }

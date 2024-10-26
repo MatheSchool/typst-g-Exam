@@ -1,4 +1,4 @@
-#import "./g-question.typ": *
+#import "question.typ": *
 #import "./g-solution.typ": *
 #import "./g-clarification.typ": *
 

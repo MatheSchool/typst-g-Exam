@@ -8,7 +8,7 @@
 /// ```
 ///
 /// - body (string, content): Body of option label.
-#let g-option(
+#let option(
     body) = {
       body
     }
