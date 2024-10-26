@@ -1,4 +1,4 @@
-#import "@preview/tidy:0.2.0"
+#import "@preview/tidy:0.3.0"
 
 #import "./util.typ": *
 #import "./style.typ" as doc-style
@@ -245,22 +245,22 @@ It can take the values 'en', 'es', 'de', 'fr', 'pt', 'it'.
 #show: g-exam.with()
 ```
 
-#doc-style.parse-show-module("../src/g-exam.typ") 
+#doc-style.parse-show-module("../src/exam.typ") 
 
 
 
-The `g-exam` library has the `g-question`, `g-subquestion`, `g-solution` and `g-clarification` 
+The `exam` library has the `question`, `subquestion`, `solution` and `clarification` 
 commands to create questions, subquestions, solutions, and clarifications.
 
 == Questions and subquestions
 
-#doc-style.parse-show-module("../src/g-question.typ") 
+#doc-style.parse-show-module("../src/question.typ") 
 
 == Solutions
 
-#doc-style.parse-show-module("../src/g-solution.typ") 
+#doc-style.parse-show-module("../src/solution.typ") 
 
 == Clarifications
 
-#doc-style.parse-show-module("../src/g-clarification.typ") 
+#doc-style.parse-show-module("../src/clarification.typ") 
 

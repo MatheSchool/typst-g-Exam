@@ -112,12 +112,22 @@ jobs:
       #   uses: lvignoli/typst-action@main
       #   with:
       #     source_file: "manual/g-exam-manual.typ"
+      - name: Compile documentation to PDF
+        shell: bash
+        run: |
+          typst compile ./manual/g-exam-manual.typ --root .
 
       - name: Upload examples PDF file
         uses: actions/upload-artifact@v4
         with:
           name: examples-g-exam
           path: ./examples/*.pdf
+
+      - name: Upload examples PDF file
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-g-exam
+          path: ./test/**/*.pdf
 
       - name: Upload documentation PDF file
         uses: actions/upload-artifact@v4
