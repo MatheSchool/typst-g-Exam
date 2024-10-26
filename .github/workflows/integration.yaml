@@ -27,9 +27,24 @@ jobs:
         shell: bash
         run: |
           cd ./examples/
-          for file in $(ls -1 *.typ); do
-            typst compile "$file"
+          
+          find "$directorio_base" -type f -name "*.typ" | while IFS= read -r archivo; do
+          typst compile "$archivo"
+            
+          if [ $? -eq 0 ]; then
+              echo "Compilación exitosa: $archivo"
+          else
+              echo "Error al compilar: $archivo"
+          fi
           done
+
+      # - name: Compile Typst examples to PDF
+      #   shell: bash
+      #   run: |
+      #     cd ./examples/
+      #     for file in $(ls -1 *.typ); do
+      #       typst compile "$file"
+      #     done
 
       # - name: List Files examples
       #   id: file-list-examples
