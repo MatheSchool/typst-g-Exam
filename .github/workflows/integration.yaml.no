@@ -16,6 +16,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
      
+      # - uses: typst-community/setup-typst@v3
+      #   with:
+      #     typst-version: latest
+
       - name: Delete samples and test
         run: |
           rm -rf ./examples/*.pdf
@@ -50,20 +54,11 @@ jobs:
           echo "File List Test: $file_list_test"
           echo "file_list_test=$file_list_test" >> $GITHUB_OUTPUT
   
-      - name: Typst
-        uses: lvignoli/typst-action@main
+      - name: Compile Typst test to PDF
+        uses: mkpoli/compile-typst-action@main
         with:
-          source_file: |
-            questions/test-001-question.typ
-            questions/test-002-subquesstion.typ
-            questions/test-003-only-usbquestion.typ
-
-
-      # - name: Compile Typst test to PDF
-      #   uses: mkpoli/compile-typst-action@main
-      #   with:
-      #     source_paths: ${{ steps.file-list-test.outputs.file_list_test }}
-      #     root_path: '.' 
+          source_paths: ${{ steps.file-list-test.outputs.file_list_test }}
+          root_path: '.' 
       # - name: Compile Typst test to PDF
       #   uses: lvignoli/typst-action@v0
       #   with:
@@ -74,9 +69,15 @@ jobs:
           rm -rf ./manual/*.pdf
 
       - name: Compile documentation to PDF
-        uses: lvignoli/typst-action@main
+        uses: lvignoli/typst-action@v0
         with:
-          source_file: "manual/g-exam-manual.typ"
+          source_paths: "manual/g-exam-manual.typ"
+          root_path: '.'
+
+      # - name: Compile documentation to PDF
+      #   uses: lvignoli/typst-action@v0
+      #   with:
+      #     source_file: "manual/g-exam-manual.typ"
 
       - name: Upload examples PDF file
         uses: actions/upload-artifact@v3
