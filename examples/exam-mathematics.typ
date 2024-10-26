@@ -21,7 +21,7 @@
   
   language: "en",
   decimal-separator: ",",
-  date: "November 21, 2023",
+  date: datetime(day:21, month: 12, year: 2023),
   // show-student-data: "first-page",
   show-student-data: "odd-pages",
   // show-student-data: none,

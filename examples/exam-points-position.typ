@@ -1,5 +1,6 @@
 #import "../src/lib.typ": *
-#import "@preview/cetz:0.2.1"
+#import "@preview/cetz:0.3.1"
+#import "@preview/cetz-plot:0.1.0"
 
 #show: exam.with()
 
@@ -15,7 +16,9 @@
     #g-subquestion(points: 0.5, points-position: left)[
       #align(center, 
       cetz.canvas(length: 0.7cm, {
-        cetz.plot.plot(
+        import cetz.draw: *
+        import cetz-plot: *
+        plot.plot(
           size: (10, 10),
           axis-style: "school-book",
           fill: "o" ,
@@ -31,15 +34,15 @@
           x-tick-step: 1,
           y-tick-step: 1,
             {
-              cetz.plot.add(((0,0),), mark-size: 0,)
+              plot.add(((0,0),), mark-size: 0,)
             
-              cetz.plot.add(
+              plot.add(
                 style: (stroke: blue + 2pt),
                 domain: (-5.2, 5.2), 
                 x=>x + 3
               )
 
-              cetz.plot.add(
+              plot.add(
                 style: (stroke: olive + 2pt),
                 domain: (-5.2, 5.2), 
                 x=>x
@@ -55,7 +58,9 @@
   #subquestion(points: 0.5, points-position: right)[
       #align(center, 
       cetz.canvas(length: 0.7cm, {
-        cetz.plot.plot(
+        import cetz.draw: *
+        import cetz-plot: *
+        plot.plot(
           size: (10, 10),
           axis-style: "school-book",
           fill: "o" ,
@@ -71,22 +76,22 @@
           x-tick-step: 1,
           y-tick-step: 1,
             {
-              cetz.plot.add(((0,0),), mark-size: 0,)
-            
-              cetz.plot.add(
+              plot.add(((0,0),), mark-size: 0,)
+          
+              plot.add(
                 style: (stroke: blue + 2pt),
                 domain: (-5.2, 5.2), 
                 x=>-x - 4
               )
 
-              cetz.plot.add(
+              plot.add(
                 style: (stroke: olive + 2pt),
                 domain: (-5.2, 5.2), 
                 x=>3
               )
             }
           )
-        }
+         }
       )
     )
   ]

@@ -1,4 +1,4 @@
-#import "@preview/cetz:0.2.1"
+#import "@preview/cetz:0.3.1"
 #import "@preview/g-exam:0.3.2": *
 
 #show: g-exam.with(
