@@ -74,14 +74,11 @@ jobs:
       #     echo "File List Test: $file_list_test"
       #     echo "file_list_test=$file_list_test" >> $GITHUB_OUTPUT
   
-      # - name: Typst
-      #   uses: lvignoli/typst-action@main
-      #   with:
-      #     source_file: |
-      #       test/questions/test-001-question.typ
-      #       test/questions/test-002-subquesstion.typ
-      #       test/questions/test-003-only-usbquestion.typ
-
+      - name: Typst
+        uses: lvignoli/typst-action@main
+        with:
+          source_file: |
+            test/**/*.typ
 
       # - name: Compile Typst test to PDF
       #   uses: mkpoli/compile-typst-action@main
@@ -117,13 +114,13 @@ jobs:
       #     source_file: "manual/g-exam-manual.typ"
 
       - name: Upload examples PDF file
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: examples-g-exam
           path: ./examples/*.pdf
 
       - name: Upload documentation PDF file
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: document-g-exam
           path: ./manual/*.pdf
