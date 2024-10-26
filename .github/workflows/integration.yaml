@@ -109,10 +109,10 @@ jobs:
         run: |
           rm -rf ./manual/*.pdf
 
-      - name: Compile documentation to PDF
-        uses: lvignoli/typst-action@main
-        with:
-          source_file: "manual/g-exam-manual.typ"
+      # - name: Compile documentation to PDF
+      #   uses: lvignoli/typst-action@main
+      #   with:
+      #     source_file: "manual/g-exam-manual.typ"
 
       - name: Upload examples PDF file
         uses: actions/upload-artifact@v3
