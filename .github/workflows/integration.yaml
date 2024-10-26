@@ -27,8 +27,8 @@ jobs:
         shell: bash
         run: |
           cd ./examples/
-          
-          find "$directorio_base" -type f -name "*.typ" | while IFS= read -r archivo; do
+
+          find . -type f -name "*.typ" | while IFS= read -r archivo; do
           typst compile "$archivo"
             
           if [ $? -eq 0 ]; then
