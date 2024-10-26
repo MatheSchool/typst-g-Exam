@@ -1,6 +1,6 @@
 #import "../../src/lib.typ": *
 
-#show: g-exam.with(
+#show: exam.with(
   question-points-position: right,
   decimal-separator: ","
   // show-grade-table: false,

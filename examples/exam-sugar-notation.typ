@@ -1,10 +1,10 @@
 #import "../src/lib.typ": *
 
-#show: g-exam.with()
+#show: exam.with()
 
-#g-question(points:.2)[Question]
+#question(points:.2)[Question]
 
-#g-subquestion(points:.2)[sub 3]
+#subquestion(points:.2)[sub 3]
 
 = Title
 
@@ -28,7 +28,7 @@
 
 =? Solve this ecuation $x^2 -4x +4 = 0$ 
 
-#g-question(points:.2)[ Solve this equation $x^2 -4x +4 = 0$ ]
+#question(points:.2)[ Solve this equation $x^2 -4x +4 = 0$ ]
 
 =! Solution of the question.
 

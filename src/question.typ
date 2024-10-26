@@ -4,7 +4,7 @@
 /// 
 /// *Example:*
 /// ``` 
-/// #g-question(points:2)[This is a question]
+/// #question(points:2)[This is a question]
 /// ```
 ///
 /// - points (none, float): Points of the question.
@@ -73,7 +73,7 @@
 /// 
 /// *Example:*
 /// ``` 
-/// #g-subquestion(points:2)[This is a sub-question]
+/// #subquestion(points:2)[This is a sub-question]
 /// ```
 ///
 /// - points (none, float): Points of the sub-question.

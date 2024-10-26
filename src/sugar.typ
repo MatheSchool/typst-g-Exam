@@ -1,6 +1,6 @@
 #import "question.typ": *
-#import "./g-solution.typ": *
-#import "./g-clarification.typ": *
+#import "solution.typ": *
+#import "clarification.typ": *
 
 #let __sugar(content) = {
   show regex("=\?"): it => {

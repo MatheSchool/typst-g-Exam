@@ -2,7 +2,7 @@
 
 #set page("us-letter")
 
-#show: g-exam.with(
+#show: exam.with(
   author: (
     name: "Wallace Eckert", 
     email: "matheschool@outlook.es", 
@@ -23,7 +23,7 @@
   
   language: "en",
   decimal-separator: ",",
-  date: "November 21, 2023",
+  date: none,
   show-student-data: "first-page",
   show-grade-table: false,
   question-points-position: right,

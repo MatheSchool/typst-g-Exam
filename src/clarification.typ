@@ -3,6 +3,10 @@
 ///  Show a clarification.
 ///    - size(length): Size of clarification.
 ///    - body(string, content):  Body of clarification.
-#let g-clarification(size:8pt, body) = { 
+#let clarification(size:8pt, body) = { 
   text(size:size)[$(*)$ #body] 
+}
+
+#let g-clarification(size:8pt, body) = {
+  clarification(size: size)[body]
 }

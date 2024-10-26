@@ -2,9 +2,9 @@
 #import "./global.typ" : *
 #import "./auxiliary.typ": *
 #import "question.typ": *
-#import "./g-option.typ": *
-#import "./g-solution.typ": *
-#import "./g-clarification.typ": *
+#import "option.typ": *
+#import "solution.typ": *
+#import "clarification.typ": *
 #import "sugar.typ": *
 
 /// Template for creating an exam.
@@ -220,6 +220,7 @@
     model: none
   ),
   language: "en",
+  languaje: none,
   localization: (
     grade-table-queston: none,
     grade-table-total: none,
@@ -256,12 +257,17 @@
 
   assert(show-solution in (true, false),
       message: "Invalid show solution value")
-      
+  
+  let _language = language
+  if _language == none {
+    _language = languaje
+  }
+
   exam(
       author: author, 
       school: school, 
       exam-info: exam-info, 
-      languaje: language, 
+      language: _language, 
       localization: localization, 
       clarifications: clarifications,
       question-text-parameters: question-text-parameters, 

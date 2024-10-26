@@ -1,13 +1,13 @@
 #import "../src/lib.typ": *
 #import "@preview/cetz:0.2.1"
 
-#show: g-exam.with()
+#show: exam.with()
 
-#g-question(points: 2, points-position: right)[Question 1]
+#question(points: 2, points-position: right)[Question 1]
 
 #v(5cm)
 
-#g-question[
+#question[
   Given the graphs of the following systems of linear equations,
   Determines by the position of the lines the type of system according to the number of solutions. \
 
@@ -52,7 +52,7 @@
   ]
   #colbreak()
 
-  #g-subquestion(points: 0.5, points-position: right)[
+  #subquestion(points: 0.5, points-position: right)[
       #align(center, 
       cetz.canvas(length: 0.7cm, {
         cetz.plot.plot(
@@ -95,8 +95,8 @@
 
 #pagebreak()
 
-#g-question(points: 1)[Question 2]
+#question(points: 1)[Question 2]
 
-#g-question(points: 1.6, points-position: right)[Question 3]
+#question(points: 1.6, points-position: right)[Question 3]
 
-#g-question()[Question 4]
+#question()[Question 4]

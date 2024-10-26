@@ -8,7 +8,7 @@
       // margin: (x: 58pt, y: 4pt)
 )
 
-#show: g-exam.with(
+#show: exam.with(
     school: (
     name: "Sunrise Secondary School",
     // logo: read("./logo.png", encoding: none),

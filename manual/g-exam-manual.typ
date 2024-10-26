@@ -7,7 +7,7 @@
 #import "../src/auxiliary.typ": *
 #import "../src/exam.typ": *
 #import "../src/question.typ": *
-#import "../src/g-solution.typ": *
+#import "../src/solution.typ": *
 
 // Usage:
 //   ```typ-example

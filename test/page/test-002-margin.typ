@@ -6,7 +6,7 @@
       margin: (x: 58pt, y: 4pt)
 )
 
-#show: g-exam.with(
+#show: exam.with(
   author: (
     name: "Wallace Eckert", 
     email: "matheschool@outlook.es", 
@@ -27,7 +27,6 @@
   
   language: "en",
   decimal-separator: ",",
-  date: "November 21, 2023",
   show-student-data: "first-page",
   show-grade-table: false,
   question-points-position: right,

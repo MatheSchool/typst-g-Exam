@@ -1,7 +1,7 @@
-#import "../src/lib.typ": g-exam, g-question, g-subquestion, g-solution
+#import "../src/lib.typ": *
 // #set text(weight: "thin")
 
-#show: g-exam.with(
+#show: exam.with(
   author: (
     name: "Gustav Kirchhoff", 
     email: "matheschool@outlook.es", 
@@ -22,7 +22,7 @@
   
   language: "en",
   decimal-separator: ",",
-  date: "November 21, 2023",
+  date: datetime(day: 15, month: 2, year:2023),
   show-student-data: "first-page",
   show-grade-table: false,
   question-points-position: right,

@@ -43,7 +43,7 @@ Exams create
 ```typst
 #import "@preview/g-exam:0.4.0": *
 
-#show: g-exam.with(
+#show: exam.with(
   author: (
     name: "Ferdinand Eisenstein", 
     email: "matheschool@outlook.es", 

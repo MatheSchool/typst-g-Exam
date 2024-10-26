@@ -1,6 +1,6 @@
 #import "../src/lib.typ": *
 
-#show: g-exam.with(
+#show: exam.with(
   author: (
     name: "Ferdinand Eisenstein", 
     email: "matheschool@outlook.es", 

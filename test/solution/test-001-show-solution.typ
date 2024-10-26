@@ -1,6 +1,6 @@
 #import "../../src/lib.typ": *
 
-#show: g-exam.with(
+#show: exam.with(
   show-grade-table: false,
   show-student-data: true,
   show-solution: false

@@ -1,6 +1,6 @@
 #import "../../src/lib.typ": *
 
-#show: g-exam.with(
+#show: exam.with(
   question-text-parameters: (font: "PT Sans", size: 18pt, spacing:200%),
 )
 
