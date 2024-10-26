@@ -96,8 +96,15 @@ jobs:
       - name: Compile Typst test to PDF
         shell: bash
         run: |
-          for file in $(ls -1 ./test/**/*.typ); do
-            typst compile "$file"
+          find . -type f -name "./test/**/*.typ" | while IFS= read -r archivo; do
+          echo archivo
+          typst compile "$archivo"
+            
+          if [ $? -eq 0 ]; then
+              echo "Compilación exitosa: $archivo"
+          else
+              echo "Error al compilar: $archivo"
+          fi
           done
 
       - name: Delete Doc
