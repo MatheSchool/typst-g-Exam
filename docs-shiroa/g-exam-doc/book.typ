@@ -9,7 +9,7 @@
   authors: ("Andrés Giménez Muñoz",),
   language: "en",
   summary: [ // begin of summary
-    = Introducction
+    // = g-Exam
     #prefix-chapter("introduction.typ")[Introduction]
     - #chapter("configuration/configuration.typ")[Configuration]
       - #chapter("configuration/draft.typ")[Configuration]

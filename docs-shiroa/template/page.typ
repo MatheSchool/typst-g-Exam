@@ -39,7 +39,7 @@
 } else {
   10.5pt
 }
-#let heading-sizes = (26pt, 22pt, 14pt, 12pt, main-size)
+#let heading-sizes = (26pt, 34pt, 24pt, 18pt, main-size)
 #let list-indent = 0.5em
 
 /// The project function defines how your document looks.
@@ -107,7 +107,7 @@
       }*/
       it
     }
-
+    
     block(
       spacing: 0.7em * 1.5 * 1.2,
       below: 0.7em * 1.2,
