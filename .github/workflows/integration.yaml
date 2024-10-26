@@ -27,7 +27,8 @@ jobs:
         shell: bash
         run: |
           find . -type f -name "./examples/*.typ" | while IFS= read -r archivo; do
-          typst compile "$archivo"
+          echo "$archivo"
+          typst compile "$archivo" --root .
             
           if [ $? -eq 0 ]; then
               echo "Compilación exitosa: $archivo"
@@ -96,7 +97,8 @@ jobs:
         shell: bash
         run: |
           find . -type f -name "./test/**/*.typ" | while IFS= read -r archivo; do
-          typst compile "$archivo"
+          echo "$archivo"
+          typst compile "$archivo" --root .
             
           if [ $? -eq 0 ]; then
               echo "Compilación exitosa: $archivo"
