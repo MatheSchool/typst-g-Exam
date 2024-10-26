@@ -262,7 +262,6 @@
   if _language == none {
     _language = languaje
   }
-
   exam(
       author: author, 
       school: school, 
@@ -276,5 +275,5 @@
       show-grade-table: show-grade-table,
       decimal-separator: decimal-separator,
       show-solution: show-solution,
-      )[body]
+      )[#body]
 }
