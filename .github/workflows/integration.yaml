@@ -26,15 +26,15 @@ jobs:
       - name: Compile Typst examples to PDF
         shell: bash
         run: |
-          find . -type f -name "./examples/*.typ" | while IFS= read -r archivo; do
-          echo "$archivo"
-          typst compile "$archivo" --root .
-            
-          if [ $? -eq 0 ]; then
-              echo "Compilación exitosa: $archivo"
-          else
-              echo "Error al compilar: $archivo"
-          fi
+          for archivo in $(ls -1 ./examples/*.typ); do
+              echo "$archivo"
+              typst compile $archivo --root .
+              
+              if [ $? -eq 0 ]; then
+                  echo "Compilación exitosa: $archivo"
+              else
+                  echo "Error al compilar: $archivo"
+              fi
           done
 
       # - name: Compile Typst examples to PDF
@@ -74,11 +74,11 @@ jobs:
       #     echo "File List Test: $file_list_test"
       #     echo "file_list_test=$file_list_test" >> $GITHUB_OUTPUT
   
-      - name: Typst
-        uses: lvignoli/typst-action@main
-        with:
-          source_file: |
-            test/**/*.typ
+      # - name: Typst
+      #   uses: lvignoli/typst-action@main
+      #   with:
+      #     source_file: |
+      #       test/**/*.typ
 
       # - name: Compile Typst test to PDF
       #   uses: mkpoli/compile-typst-action@main
@@ -93,15 +93,15 @@ jobs:
       - name: Compile Typst test to PDF
         shell: bash
         run: |
-          find . -type f -name "./test/**/*.typ" | while IFS= read -r archivo; do
-          echo "$archivo"
-          typst compile "$archivo" --root .
+          for archivo in $(ls -1 ./test/**/*.typ); do
+            echo "$archivo"
+            typst compile $archivo --root .
             
-          if [ $? -eq 0 ]; then
-              echo "Compilación exitosa: $archivo"
-          else
-              echo "Error al compilar: $archivo"
-          fi
+            if [ $? -eq 0 ]; then
+                echo "Compilación exitosa: $archivo"
+            else
+                echo "Error al compilar: $archivo"
+            fi
           done
 
       - name: Delete Doc
