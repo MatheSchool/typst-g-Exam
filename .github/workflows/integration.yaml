@@ -54,9 +54,9 @@ jobs:
         uses: lvignoli/typst-action@main
         with:
           source_file: |
-            questions/test-001-question.typ
-            questions/test-002-subquesstion.typ
-            questions/test-003-only-usbquestion.typ
+            test/questions/test-001-question.typ
+            test/questions/test-002-subquesstion.typ
+            test/questions/test-003-only-usbquestion.typ
 
 
       # - name: Compile Typst test to PDF
