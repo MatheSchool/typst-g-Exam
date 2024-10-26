@@ -157,6 +157,8 @@
     point: none,
     points-position: none, 
     body) = {
+      // panic("g-question is obsolete, please use question.")
+
       if points == none {
         question(points: point, points-position: points-position)[#body]  
       }
@@ -170,7 +172,9 @@
     point: none,
     points-position: none, 
     body) = {
-            if points == none {
+      // panic("g-subquestion is obsolete, please use subquestion.")
+
+      if points == none {
         subquestion(points: point, points-position: points-position)[#body]  
       }
       else {
