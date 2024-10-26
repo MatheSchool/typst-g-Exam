@@ -269,7 +269,6 @@
       show-student-data: show-student-data,
       show-grade-table: show-grade-table,
       decimal-separator: decimal-separator,
-      question-point-position: question-point-position, 
       show-solution: show-solution,
       )[body]
 }

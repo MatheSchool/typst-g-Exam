@@ -26,7 +26,8 @@ jobs:
       - name: Compile Typst examples to PDF
         shell: bash
         run: |
-          for file in $(ls -1 ./examples/*.typ); do
+          cd ./examples/
+          for file in $(ls -1 *.typ); do
             typst compile "$file"
           done
 
@@ -81,7 +82,7 @@ jobs:
       - name: Compile Typst test to PDF
         shell: bash
         run: |
-          for file in $(ls -1 ./test/*.typ); do
+          for file in $(ls -1 ./test/**/*.typ); do
             typst compile "$file"
           done
 

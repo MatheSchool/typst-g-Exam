@@ -1,6 +1,6 @@
 #import "../src/lib.typ": *
 
-#show: g-exam.with(
+#show: exam.with(
   author: (
     name: "Évariste Galois", 
     email: "matheschool@outlook.es", 
@@ -21,7 +21,7 @@
   
   language: "en",
   decimal-separator: ",",
-  date: "November 21, 2023",
+  date: datetime(day: 30, month: 5, year:2023),
   show-student-data: "first-page",
   show-grade-table: false,
   question-points-position: left,
