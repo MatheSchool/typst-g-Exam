@@ -29,7 +29,7 @@ jobs:
           cd ./examples/
 
           find . -type f -name "*.typ" | while IFS= read -r archivo; do
-          typst compile "$archivo"
+          typst compile "$archivo" --root .
             
           if [ $? -eq 0 ]; then
               echo "Compilación exitosa: $archivo"
