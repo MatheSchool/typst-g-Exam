@@ -29,6 +29,7 @@
 ///  - clarifications (string, content, array): Clarifications of exam. It will appear in a box on the first page.
 ///  - question-text-parameters: Parameter of text in question and subquestion. For example, it allows us to change the text size of the questions.
 ///  - show-student-data (none, true, false, "first-page", "all-pages", "odd-pages"): Show a box for the student to enter their details. It can appear on the first page, all pages or on all odd-numbered pages.
+///  - show-student-number: (int) Number of student in student data.
 ///  - show-grade-table: (bool): Show the grade table.
 ///  - decimal-separator: (".", ","): Indicate the decimal separation character.
 ///  - question-points-position: (none, left, right): Position of question points.
@@ -79,6 +80,7 @@
   //   group: true,
   //   date: true
   // ),
+  show-student-number: 1,
   show-grade-table: true,
   decimal-separator: ".",
   question-points-position: left,
@@ -132,7 +134,8 @@
           page-number: __page-number,
           school: school, 
           exam-info: exam-info, 
-          show-student-data: show-student-data)
+          show-student-data: show-student-data, 
+          show-student-number: show-student-number)
       }
     },
 

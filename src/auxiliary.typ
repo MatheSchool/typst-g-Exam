@@ -9,6 +9,7 @@
       //   group: first-page,
       //   date: first-page
       // ),
+      show-student-number: 1,
     ) = {
     
     let family-label = [
@@ -67,8 +68,13 @@
     }
   }
 
-  family-label
-  give-label
+  let i = show-student-number
+  while i > 0 {
+    family-label
+    give-label
+    [ \ ]
+    i = i - 1
+  }
   v(1pt)
   align(right, {
       group-label
@@ -278,6 +284,7 @@
     //   group: true,
     //   date: true
     // ),
+    show-student-number: 1,
   ) => {
       if (page-number==1) { 
         align(right)[#box(
@@ -325,7 +332,8 @@
                 line(length: 100%, stroke: 1pt + gray),
                 __g-student-data(
                   page: "first", 
-                  show-student-data: show-student-data
+                  show-student-data: show-student-data, 
+                  show-student-number: show-student-number,
                 )
             )
           )
@@ -354,7 +362,8 @@
           line(length: 100%, stroke: 1pt + gray) 
           __g-student-data(
             page: "odd", 
-            show-student-data: show-student-data
+            show-student-data: show-student-data, 
+            show-student-number: show-student-number,
           )
       }
       else {
@@ -380,7 +389,8 @@
           line(length: 100%, stroke: 1pt + gray)
           __g-student-data(
             page: "pair", 
-            show-student-data: show-student-data
+            show-student-data: show-student-data, 
+            show-student-number:  show-student-number,
           )
         }
       } 
