@@ -72,10 +72,9 @@
   while i > 0 {
     family-label
     give-label
-    [ \ ]
+    v(1pt)
     i = i - 1
   }
-  v(1pt)
   align(right, {
       group-label
       date-label

@@ -19,7 +19,7 @@
 
 == A sample exam
 
-#link("./assets/exam-table-content.pdf?raw=true")[
+#link("/exam-table-content.pdf?raw=true")[
 #figure(
   image("./assets/exam-table-content.png", width: 80%),
   caption: [Exam - Table of content],
@@ -59,51 +59,7 @@
 #v(1fr)
 ```
 
-== Changelog
 
-=== v0.4.0
-- Change point parameter to points in g-question and g-subquestion.
-- Change question-points-position paramet to question-points-position.
-- Include documentation.
-- Use paper by default.
-- Indenting subquestion.
-- Include support for dutch language.
-- Corrections in English texts. 
-- Draft label.
-
-=== v0.3.2
-
-- Change show-studen-data to show-student-data parameter.
-- Change languaje to language parameter.
-
-=== v0.3.1
-
-- Corrections in French.
-
-=== v0.3.0
-
-- Include parameter question-text-parameters.
-- Show solution.
-- Expand documentation.
-- Possibility of estrablecer question-points-position to none.
-- Bug fix show watermark.
-
-=== v0.2.0
-
-- Control the size of the logo image.
-- Convert to template
-- Allow true and false values in show-student-data.
-- Show clarifications.
-- Widen margin points.
-- Show solution.
-
-=== v0.1.1
-
-- Fix loading image.
-
-=== v0.1.0
-
-- Initial version submitted to typst/packages.
 
 
 // *shiroa* (_Shiro A_, or _The White_, or _云笺_) is a simple tool for creating modern online (cloud) books in pure typst. It has similar use cases as #link("https://rust-lang.github.io/mdBook/index.html")[mdBook], which is ideal for creating product or API documentation, tutorials, course materials or anything that requires a clean, easily navigable and customizable presentation.
