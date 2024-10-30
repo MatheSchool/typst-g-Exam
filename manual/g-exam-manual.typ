@@ -40,7 +40,7 @@ This template provides a way to generate exams. You can create questions and sub
 
 = Usage
 
-This is the minimum model for generating an exam, in which you define the g-exam template and the questions and subquestions with the g-question and g-subquestion commands.
+This is the minimum model for generating an exam, in which you define the g-exam template and the questions and subquestions with the question and subquestion commands.
 
 #pad(left: 1em)[
 
@@ -48,14 +48,14 @@ This is the minimum model for generating an exam, in which you define the g-exam
 #import "@preview/g-exam:0.3.2": *
 #show: g-exam.with()
 
-#g-question(points: 2)[List prime numbers]
+#question(points: 2)[List prime numbers]
 #v(1fr)
 
-#g-question(points: 1)[Complete the following sentences] 
-  #g-subquestion[Don Quixote was written by ...]
+#question(points: 1)[Complete the following sentences] 
+  #subquestion[Don Quixote was written by ...]
   #v(1fr)
       
-  #g-subquestion[The name of the continent we live on is ...]
+  #subquestion[The name of the continent we live on is ...]
   #v(1fr)
 ```]
 
@@ -128,7 +128,7 @@ In order for this table to appear, we will have to set the `show-grade-table` a 
 To enter the questions, use the `q-question`, followed by the text of the question. You can include the score of the question by entering the parameter `point`.
 
 ```typ-example
-#g-question(points: 2)[Question text.]
+#question(points: 2)[Question text.]
 #v(1fr)
 ```
 
@@ -147,14 +147,14 @@ The following example asks a first question, with no sub-questions, with a score
 #import "@preview/g-exam:0.3.0": *
 #show: g-exam.with()
 
-#g-question(points: 2)[List prime numbers]
+#question(points: 2)[List prime numbers]
 #v(1fr)
 
-#g-question[Complete the following sentences] 
-  #g-subquestion(points: 2)[Don Quixote was written by ...]
+#question[Complete the following sentences] 
+  #subquestion(points: 2)[Don Quixote was written by ...]
   #v(1fr)
       
-  #g-subquestion(points: 2)[The name of the continent we live on is ...]
+  #subquestion(points: 2)[The name of the continent we live on is ...]
   #v(1fr)
 ```]
 
