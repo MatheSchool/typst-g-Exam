@@ -8,7 +8,7 @@ The template will include a header in the exam, with the information entered in 
 indicate a logo of the educational center, a description of the exam, subject, content, academic level, …
 
 ```typst
-#show: g-exam.with(
+#show: exam.with(
     author: (
         name: "Carl Friedrich Gauss",
         email: "matheschool@outlook.es",
@@ -52,7 +52,7 @@ We will be able to show a scoreboard, with the points for each question. In orde
 appear, we will have to set the show-grade-table a *true*, a *false* so that it doesn’t show up.
 
 ```typst
-#show: g-exam.with(
+#show: exam.with(
     show-grade-table: true,
 )
 ```
@@ -63,7 +63,7 @@ To enter the questions, use the q-question, followed by the text of the question
 score of the question by entering the parameter point.
 
 ```typst
-#g-question(points: 2)[Question text.]
+#question(points: 2)[Question text.]
 #v(1fr)
 ```
 
