@@ -1,31 +1,17 @@
 #import "mod.typ": *
-#import "@preview/tidy:0.3.0"
+// #import "@preview/tidy:0.3.0"
+#import "../template/tidy/tidy.typ"
 
 #show: book-page.with(title: "Página 1")
 
 #let parse-show-module(path) = {
-    tidy.parse-module(
-      read(path),
-      // scope: (
-      //   example: example,
-      //   show-parameter-block: show-parameter-block,
-      //   cetz: lib
-      // )
-    // ),
-
-  // tidy.show-module(
-  //   tidy.parse-module(
-  //     read(path),
-  //     // scope: (
-  //     //   example: example,
-  //     //   show-parameter-block: show-parameter-block,
-  //     //   cetz: lib
-  //     // )
-  //   ),
-  //   show-outline: false,
-  //   sort-functions: none,
-  //   // style: style 
-  //   style: tidy.styles.default,
+    tidy.show-module(
+      tidy.parse-module(read(path),
+    ),
+  show-outline: false,
+    sort-functions: none,
+    // style: style,
+    style: tidy.styles.default,
   )
 }
 
