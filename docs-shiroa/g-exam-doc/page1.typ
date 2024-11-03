@@ -1,6 +1,6 @@
 #import "mod.typ": *
-// #import "@preview/tidy:0.3.0"
-#import "../template/tidy/tidy.typ"
+#import "@preview/tidy:0.3.0"
+// #import "../template/tidy/tidy.typ"
 
 #show: book-page.with(title: "Página 1")
 
