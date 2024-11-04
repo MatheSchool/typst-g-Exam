@@ -439,10 +439,27 @@
 }
 
 #let __show-draft = (
-    draft-show: true,
-    draft-label: [],
+    draft-show: true
   ) => {
-      if draft-show {
+      if draft-show == false or draft-show == none {
+        return
+      }
+
+      let draft-text = none
+
+      if type(draft-show) == "string"{
+        draft-text = draft-show
+      }
+
+      if type(draft-show) == "content"{
+        draft-text = draft-show
+      }
+
+      if  draft-text == none {
+        draft-text = context __g-localization.final().draft-label
+      }
+
+      if draft-text != none {
           place(
             center,
             clearance: 0pt,
@@ -451,8 +468,8 @@
             rotate(-45deg,
               origin: top + right,
               text(size:70pt, fill:silver)[
-                #context __g-localization.final().draft-label
-              ] 
+                #draft-text
+              ]
             )
           )
         }

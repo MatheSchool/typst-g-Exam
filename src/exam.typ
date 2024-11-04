@@ -108,7 +108,7 @@
   assert(show-solution in (true, false),
       message: "Invalid show solution value")
 
-  assert(show-draft in (true, false),
+  assert(show-draft in (true, false, none) or type(show-draft) in ("string", "content"),
       message: "Invalid show draft value")
 
   assert(date == none or date == auto or type(date) == "datetime", 
@@ -146,7 +146,7 @@
     },
 
     background: {
-      __show-draft(draft-show: show-draft, draft-label:[draft])
+      __show-draft(draft-show: show-draft)
     },
 
     footer: {
