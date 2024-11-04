@@ -10,6 +10,7 @@
 /// - points (none, float): Points of the question.
 /// - points-position (none, left, right): Position of points. If none,  use the position defined in G-Exam. 
 /// - body (string, content): Body of question.
+/// -> content
 #let question(
     points: none,
     points-position: none,
@@ -79,6 +80,7 @@
 /// - points (none, float): Points of the sub-question.
 /// - points-position (none, left, right): Position of points. If none,  use the position defined in G-Exam. 
 /// - body (string, content): Body of sub-question.
+/// -> content
 #let subquestion(
     points: none, 
     points-position: none, 

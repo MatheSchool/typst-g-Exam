@@ -14,6 +14,8 @@
     - #chapter("configuration/configuration.typ")[Configuration]
       - #chapter("configuration/draft.typ")[Configuration]
     - #chapter("commands.typ")[Commands]
+      - #chapter("commands/exam.typ")[Exam]
+      - #chapter("commands/question.typ")[Question]
       - #chapter("page1.typ")[Página 1]
       - #chapter("page2.typ")[Página 2]
     

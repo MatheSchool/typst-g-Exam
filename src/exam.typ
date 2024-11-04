@@ -8,33 +8,39 @@
 #import "sugar.typ": *
 
 /// Template for creating an exam.
-/// 
-///  - author: Infomation of author of exam.
-///  - name (string, content): Name of author of exam.
-///  - email (string): E-mail of author of exam.
-///  - watermark (string): Watermark with information about the author of the document.
-///  - school: Information of school.
-///  - name (string, content): Name of the school or institution generating the exam.
-///  - logo (none, content, bytes): Logo of the school or institution generating the exam.
-///  - exam-info: Information of exam.
-///  - academic-period (none, content, str): Academic period.
-///  - academic-level (none, content, str): Academic level.
-///  - academic-subject (none, content, str): Academic subname.
-///  - number (none, content, str): Number of exam.
-///  - content (none, content, str): Content of exam.
-///  - model (none, content, str): Model of exam.
-///  - date (none, auto, datetime): Date of generate document.
-///  - keywords (string): Keywords of document.
-///  - language (en, es, de, fr, pt, it, nl): Language of document. English, Spanish, German, French, Portuguese and Italian are defined.
-///  - clarifications (string, content, array): Clarifications of exam. It will appear in a box on the first page.
-///  - question-text-parameters: Parameter of text in question and subquestion. For example, it allows us to change the text size of the questions.
-///  - show-student-data (none, true, false, "first-page", "all-pages", "odd-pages"): Show a box for the student to enter their details. It can appear on the first page, all pages or on all odd-numbered pages.
-///  - show-student-number: (int) Number of student in student data.
-///  - show-grade-table: (bool): Show the grade table.
-///  - decimal-separator: (".", ","): Indicate the decimal separation character.
-///  - question-points-position: (none, left, right): Position of question points.
-///  - show-solution: (true, false, "space", "spacex2", "spacex3"): Show the solutions.
-///  - show-draft: (true, false): It shows a draft label in the background.
+
+/// /// *Example:*
+/// ``` 
+/// #subquestion(points:2)[This is a sub-question]
+/// ```
+
+/// - author: Infomation of author of exam.
+///   - name (string, content): Name of author of exam.
+///   - email (string): E-mail of author of exam.
+///   - watermark (string): Watermark with information about the author of the document.
+/// - school: Information of school.
+///   - name (string, content): Name of the school or institution generating the exam.
+///   - logo (none, content, bytes): Logo of the school or institution generating the exam.
+/// - exam-info: Information of exam.
+///   - academic-period (none, content, str): Academic period.
+///   - academic-level (none, content, str): Academic level.
+///   - academic-subject (none, content, str): Academic subname.
+///   - number (none, content, str): Number of exam.
+///   - content (none, content, str): Content of exam.
+///   - model (none, content, str): Model of exam.
+/// - date (none, auto, datetime): Date of generate document.
+/// - keywords (string): Keywords of document.
+/// - language (en, es, de, fr, pt, it, nl): Language of document. English, Spanish, German, French, Portuguese and Italian are defined.
+/// - clarifications (string, content, array): Clarifications of exam. It will appear in a box on the first page.
+/// - question-text-parameters: Parameter of text in question and subquestion. For example, it allows us to change the text size of the questions.
+/// - show-student-data (none, true, false, "first-page", "all-pages", "odd-pages"): Show a box for the student to enter their details. It can appear on the first page, all pages or on all odd-numbered pages.
+/// - show-student-number: (int) Number of student in student data.
+/// - show-grade-table: (bool): Show the grade table.
+/// - decimal-separator: (".", ","): Indicate the decimal separation character.
+/// - question-points-position: (none, left, right): Position of question points.
+/// - show-solution: (true, false, "space", "spacex2", "spacex3"): Show the solutions.
+/// - show-draft: (true, false): It shows a draft label in the background.
+/// -> content
 #let exam(
   author: (
     name: "",

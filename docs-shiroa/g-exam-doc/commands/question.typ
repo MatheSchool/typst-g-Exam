@@ -1,43 +1,21 @@
 #import "mod.typ": *
+#import "../../../src/question.typ"
 
+#show: book-page.with(title: "Question")
 
-#show: book-page.with(title: "Página 1")
+// = Question
 
-// #let parse-show-module(path) = {
-//   tidy.show-module(
-//     tidy.parse-module(
-//       read(path)
-//     ),
-//     show-outline: false,
-//     sort-functions: none,
-//     style: tidy.styles.default,
-//   )
-// }
+// #parse-show-module("../../src/question.typ") 
 
-= Página 1
+#let docs = tidy.parse-module(
+  read("../../../src/question.typ"), 
+  // name: "question", 
+  scope: (question: question),
+  
+  preamble: "import g-exam: *;"
+)
 
-== Prueba de pagina 1
-
-#parse-show-module("../../src/question.typ") 
-
-== Prueba de página 2
-
-#lorem(100)
-
-#let t = cross-link("/page2.typ")[Página 2]
-
-En lace a #t muy bonito.
-
-*Ejemplo*:
-
-```typ
-= Página 1
-
-== Prueba de pagina 1
-
-#lorem(100)
-
-== Prueba de página 2
-
-#lorem(100)
-```
+#tidy.show-module(docs,
+   show-outline: false,
+   sort-functions: "subquestion",
+   style: tidy.styles.default)
