@@ -4,16 +4,6 @@
 #show: book-page.with(title: "Página 1")
 
 #let parse-show-module(path) = {
-    tidy.parse-module(
-      read(path),
-      // scope: (
-      //   example: example,
-      //   show-parameter-block: show-parameter-block,
-      //   cetz: lib
-      // )
-    // ),
-
-  // tidy.show-module(
   //   tidy.parse-module(
   //     read(path),
   //     // scope: (
@@ -21,11 +11,21 @@
   //     //   show-parameter-block: show-parameter-block,
   //     //   cetz: lib
   //     // )
-  //   ),
-  //   show-outline: false,
-  //   sort-functions: none,
-  //   // style: style 
-  //   style: tidy.styles.default,
+  // )
+
+  tidy.show-module(
+    tidy.parse-module(
+      read(path),
+      // scope: (
+      //   example: example,
+      //   show-parameter-block: show-parameter-block,
+      //   cetz: lib
+      // )
+    ),
+    show-outline: false,
+    sort-functions: none,
+    // style: style 
+    style: tidy.styles.default,
   )
 }
 
