@@ -1,6 +1,6 @@
 // This is important for shiroa to produce a responsive layout
 // and multiple targets.
-#import "@preview/shiroa:0.1.1": get-page-width, target, is-web-target, is-pdf-target, plain-text, templates
+#import "@preview/shiroa:0.1.2": get-page-width, target, is-web-target, is-pdf-target, plain-text, templates
 #import templates: *
 
 // Metadata
@@ -39,7 +39,7 @@
 } else {
   10.5pt
 }
-#let heading-sizes = (26pt, 34pt, 24pt, 18pt, main-size)
+#let heading-sizes = (26pt, 34pt, 24pt, 18pt, main-size, main-size)
 #let list-indent = 0.5em
 
 /// The project function defines how your document looks.
