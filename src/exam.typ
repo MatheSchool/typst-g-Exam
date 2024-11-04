@@ -8,12 +8,15 @@
 #import "sugar.typ": *
 
 /// Template for creating an exam.
-
-/// /// *Example:*
+///
+/// \ 
+/// **Exaple**
 /// ``` 
-/// #subquestion(points:2)[This is a sub-question]
+/// #show: exam.with()
 /// ```
-
+///  
+///  \
+/// 
 /// - author: Infomation of author of exam.
 ///   - name (string, content): Name of author of exam.
 ///   - email (string): E-mail of author of exam.
@@ -40,6 +43,7 @@
 /// - question-points-position: (none, left, right): Position of question points.
 /// - show-solution: (true, false, "space", "spacex2", "spacex3"): Show the solutions.
 /// - show-draft: (true, false): It shows a draft label in the background.
+/// - body (string, content): Body of exam.
 /// -> content
 #let exam(
   author: (

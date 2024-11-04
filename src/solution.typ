@@ -9,9 +9,8 @@
 ///  I know the demostration, but there's no room on the margin. For any clarification ask Andrew Whilst.
 /// ]```
 ///
-///
 /// - alternative-content (string, content): Alternate content when the question solution is not displayed.
-///  - show-solution: (true, false, "space", "spacex2", "spacex3"): Show the solutions.
+/// - show-solution: (true, false, "space", "spacex2", "spacex3"): Show the solutions.
 /// - body (string, content): Body of question solution
 #let solution(
     alternative-content: none,
