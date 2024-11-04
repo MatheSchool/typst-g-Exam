@@ -1,6 +1,7 @@
 #import "example.typ": example
 #import "/src/lib.typ"
 #import "@preview/t4t:0.3.2": is
+#import "@preview/tidy:0.3.0"
 
 // #let show-function(fn, style-args) = {
 //   [

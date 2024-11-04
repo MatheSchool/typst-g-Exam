@@ -6,7 +6,7 @@
 
 == Prueba de pagina 1
 
-#parse-show-module("../../src/question.typ") 
+// #parse-show-module("../../src/question.typ") 
 
 == Prueba de página 2
 
