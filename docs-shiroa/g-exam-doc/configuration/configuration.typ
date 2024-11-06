@@ -28,23 +28,7 @@ indicate a logo of the educational center, a description of the exam, subject, c
 )
 ```
 
-= Student Information
 
-In order for a header in which the student must enter his/her personal data, it must be speciﬁed on the
-template by means of the ‘show-studen-data’ property indicating how you want this box to appear.
-Values can be:
-
-- ﬁrst-page: It will only appear on the ﬁrst page.
-- odd-pages: It will appear on odd-numbered pages.
-- none: The user information box will not appear..
-
-The following example will display student information on the ﬁrst page.
-
-```typst
-#show: g-exam.with(
-    show-studen-data: "first-page",
-)
-```
 
 = Scoreboard
 
@@ -118,38 +102,3 @@ exam-info: (
 ```
 This information can be consulted in the properties of the pdf document.
 
-= Punctuation Decimal Separator
-
-Depending on the language we use, the decimal separator may change. To specify the decimal sepa-
-rator we want to use, we use ‘decimal-separator’ with the values ‘.’ or ‘,’ as follows.
-
-```typst
-#show: g-exam.with(
-    decimal-separator: ",",
-)
-```
-
-= Font type
-
-For children with special needs, it is recommended to use a larger font, which can cause the entire
-document to be out of place. To do this, the question-text-parameters parameter has been created in
-which we will indicate the font that will have, only, the content of the questions, leaving the rest of the
-text with the same font. In this way, the layout of the document will be maintained in a similar way.
-The following example will use a 16-point, double-spaced font for the questions.
-
-```typst
-#show: g-exam.with(
-    question-text-parameters: (size: 16pt, spacing:200%),
-)
-```
-
-= Languages
-
-You can specify the language in which you want the text to appear. To do this, we use the "languaje"
-property. It can take the values "en", "es", "de", "fr", "pt", "it", "nl".
-
-```typst
-#show: g-exam.with(
-    languaje: "es",
-)
-```

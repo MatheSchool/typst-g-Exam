@@ -2,4 +2,15 @@
 
 #show: book-page.with(title: "localization")
 
-= Header
+= Localization
+
+== Languages
+
+You can specify the language in which you want the text to appear. To do this, we use the "languaje"
+property. It can take the values "en", "es", "de", "fr", "pt", "it", "nl".
+
+```typst
+#show: g-exam.with(
+    languaje: "es",
+)
+```
