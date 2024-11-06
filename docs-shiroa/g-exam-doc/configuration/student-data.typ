@@ -2,4 +2,6 @@
 
 #show: book-page.with(title: "studen-data")
 
-= Header
+= Studen Data
+
+#lorem(200)
