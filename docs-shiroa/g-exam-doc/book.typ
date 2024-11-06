@@ -12,7 +12,16 @@
     // = g-Exam
     #prefix-chapter("introduction.typ")[Introduction]
     - #chapter("configuration/configuration.typ")[Configuration]
-      - #chapter("configuration/draft.typ")[Configuration]
+      - #chapter("configuration/question.typ")[Questions]
+      - #chapter("configuration/author.typ")[Author]
+      - #chapter("configuration/school.typ")[School]
+      - #chapter("configuration/studen-data.typ")[Studen data]
+      - #chapter("configuration/exam-info.typ")[Exam info]
+      - #chapter("configuration/.typ")[Configuration]
+      - #chapter("configuration/localization.typ")[Localization]
+      - #chapter("configuration/clarifications.typ")[Clarifications]
+      - #chapter("configuration/draft.typ")[Draft]
+     
     - #chapter("commands.typ")[Commands]
       - #chapter("commands/exam.typ")[Exam]
       - #chapter("commands/question.typ")[Question]
