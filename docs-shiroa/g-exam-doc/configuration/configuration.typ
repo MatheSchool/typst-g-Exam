@@ -2,7 +2,7 @@
 
 #show: book-page.with(title: "Configuration")
 
-= Header
+= Configuration
 
 The template will include a header in the exam, with the information entered in the template. We can
 indicate a logo of the educational center, a description of the exam, subject, content, academic level, …
@@ -28,15 +28,13 @@ indicate a logo of the educational center, a description of the exam, subject, c
 )
 ```
 
-
-
 = Scoreboard
 
 We will be able to show a scoreboard, with the points for each question. In order for this table to
 appear, we will have to set the show-grade-table a *true*, a *false* so that it doesn’t show up.
 
 ```typst
-#show: exam.with(
+#show: g-exam.with(
     show-grade-table: true,
 )
 ```
@@ -47,7 +45,7 @@ To enter the questions, use the q-question, followed by the text of the question
 score of the question by entering the parameter point.
 
 ```typst
-#question(points: 2)[Question text.]
+#g-question(points: 2)[Question text.]
 #v(1fr)
 ```
 

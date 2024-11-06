@@ -1,8 +1,8 @@
 #import "mod.typ": *
 
-#show: book-page.with(title: "question")
+#show: book-page.with(title: "Question")
 
-= Header
+= Questions
  
 = grade-table
 
