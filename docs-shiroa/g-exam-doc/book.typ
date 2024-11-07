@@ -35,7 +35,7 @@
     // == Examples
     - #chapter("examples/exam-big-image.typ")[Example]
     - #chapter("changelog.typ")[Changelog]
-    - #chapter("about.typ")[About]
+    // - #chapter("about.typ")[About]
   ],
 )
 
