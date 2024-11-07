@@ -2,7 +2,7 @@
 
 #show: exam.with(
   show-grade-table: false,
-  show-draft: false,
+  draft: false,
 )
 
 Hello, how are you doing?

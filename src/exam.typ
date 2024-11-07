@@ -42,7 +42,7 @@
 /// - decimal-separator: (".", ","): Indicate the decimal separation character.
 /// - question-points-position: (none, left, right): Position of question points.
 /// - show-solution: (true, false, "space", "spacex2", "spacex3"): Show the solutions.
-/// - show-draft: (true, false): It shows a draft label in the background.
+/// - draft: (true, false): It shows a draft label in the background.
 /// - body (string, content): Body of exam.
 /// -> content
 #let exam(
@@ -95,7 +95,7 @@
   decimal-separator: ".",
   question-points-position: left,
   show-solution: true,
-  show-draft: false,
+  draft: false,
   body,
 ) = {
   if type(show-student-data) != "dictionary" and type(show-student-data) != "array" {
@@ -112,7 +112,7 @@
   assert(show-solution in (true, false),
       message: "Invalid show solution value")
 
-  assert(show-draft in (true, false, none) or type(show-draft) in ("string", "content"),
+  assert(draft in (true, false, none) or type(draft) in ("string", "content"),
       message: "Invalid show draft value")
 
   assert(date == none or date == auto or type(date) == "datetime", 
@@ -150,7 +150,7 @@
     },
 
     background: {
-      __show-draft(draft-show: show-draft)
+      __show-draft(draft: draft)
     },
 
     footer: {

@@ -3,7 +3,7 @@
 #show: exam.with(
   language: "es",
   show-grade-table: false,
-  show-draft: true,
+  draft: true,
 )
 
 Hello, how are you doing?

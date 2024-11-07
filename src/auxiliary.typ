@@ -439,20 +439,20 @@
 }
 
 #let __show-draft = (
-    draft-show: true
+    draft: true
   ) => {
-      if draft-show == false or draft-show == none {
+      if draft == false or draft == none {
         return
       }
 
       let draft-text = none
 
-      if type(draft-show) == "string"{
-        draft-text = draft-show
+      if type(draft) == "string"{
+        draft-text = draft
       }
 
-      if type(draft-show) == "content"{
-        draft-text = draft-show
+      if type(draft) == "content"{
+        draft-text = draft
       }
 
       if  draft-text == none {

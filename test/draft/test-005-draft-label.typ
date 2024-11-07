@@ -2,7 +2,7 @@
 
 #show: exam.with(
   show-grade-table: false,
-  show-draft: true,
+  draft: true,
   localization: (
     draft-label:[#text(fill: gradient.radial(..color.map.rainbow))[Draft label]],
   ),
