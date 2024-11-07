@@ -28,7 +28,7 @@ To use this package, simply add the following code to your document:
 ```typ
 #import "@preview/g-exam:0.4.0": *
 
-#show: g-exam.with(
+#show: exam.with(
   school: (
     name: "Sunrise Secondary School",
     logo: read("./logo.png", encoding: none),
