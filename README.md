@@ -15,7 +15,7 @@ This template provides a way to generate exams. You can create questions and sub
 
 ## Usage 
 
-For information, see the [manual](https://github.com/MatheSchool/typst-g-exam/blob/master/doc/g-exam-manual.pdf?raw=true). 
+For information, see the [online docucumentation](https://matheschool.github.io/typst-g-exam/). 
 
 To use this package, simply add the following code to your document:
 
@@ -26,7 +26,7 @@ To use this package, simply add the following code to your document:
 #### Source:
 
 ```typ
-#import "@preview/g-exam:0.3.2": *
+#import "@preview/g-exam:0.4.0": *
 
 #show: g-exam.with(
   school: (
@@ -46,20 +46,22 @@ To use this package, simply add the following code to your document:
   show-grade-table: true,
   clarifications: "Answer the questions in the spaces provided. If you run out of room for an answer, continue on the back of the page."
 )
-#g-question(points:2.5)[Is it true that $x^n + y^n = z^n$ if $(x,y,z)$ and $n$ are positive integers?. Explain.] 
+#question(points:2.5)[Is it true that $x^n + y^n = z^n$ if $(x,y,z)$ and $n$ are positive integers?. Explain.] 
 #v(1fr)
 
-#g-question(points:2.5)[Prove that the real part of all non-trivial zeros of the function $zeta(z) "is" 1/2$].
+#question(points:2.5)[Prove that the real part of all non-trivial zeros of the function $zeta(z) "is" 1/2$].
 #v(1fr)
 
-#g-question(points:2)[Compute $ integral_0^infinity (sin(x))/x $ ]
+#question(points:2)[Compute $ integral_0^infinity (sin(x))/x $ ]
 #v(1fr)
 ```
 
 ## Changelog
 
 <!-- ### v0.4.0
-- Change point parameter to points in g-question and g-subquestion.
+- Change g-exam for exam.
+- Change g-question and g-subquestion for question and subquestion.
+- Change point parameter to points in question and subquestion.
 - Change question-points-position paramet to question-points-position.
 - Include documentation.
 - Use paper by default.

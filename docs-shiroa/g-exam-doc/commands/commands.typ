@@ -5,10 +5,10 @@
 = Exam
 
 ```typst
-#show: g-exam.with()
+#show: exam.with()
 ```
 
-== g-exam
+== exam
 
 Template for creating an exam.
 - *autor*: Infomation of autor of exam.
