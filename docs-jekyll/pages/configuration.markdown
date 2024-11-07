@@ -82,18 +82,18 @@ second question with two sub-questions with a score of 2 points each, which will
 question is worth a total of four points in the scorecard.
 
 ```
-#import "@preview/g-exam:0.3.0": *
-#show: g-exam.with()
+#import "@preview/g-exam:0.4.0": *
+#show: exam.with()
 
-#g-question(points: 2)[List prime numbers]
+#question(points: 2)[List prime numbers]
 #v(1fr)
 
-#g-question[Complete the following sentences]
+#question[Complete the following sentences]
 
-#g-subquestion(points: 2)[Don Quixote was written by ...]
+#subquestion(points: 2)[Don Quixote was written by ...]
 #v(1fr)
 
-#g-subquestion(points: 2)[The name of the continent we live on is ...]
+#subquestion(points: 2)[The name of the continent we live on is ...]
 #v(1fr)
 ```
 
@@ -103,22 +103,22 @@ If a pdf document is generated, the information will be saved in the document. S
 name, e-mail, watermark, exam information, …
 
 ```
-#show: g-exam.with(
+#show: exam.with(
 author: (
-name: "Leonhard Euler",
-email: "matheschool@outlook.es",
-watermark: "Teacher: Leonhard", ),
+    name: "Leonhard Euler",
+    email: "matheschool@outlook.es",
+    watermark: "Teacher: Leonhard", ),
 school: (
-name: "Sunrise Secondary School",
-logo: read("./logo.png", encoding: none),
+    name: "Sunrise Secondary School",
+    logo: read("./logo.png", encoding: none),
 ),
 exam-info: (
-academic-period: "Academic year 2023/2024",
-academic-level: "1st Secondary Education",
-academic-subject: "Mathematics",
-number: "2nd Assessment 1st Exam",
-content: "Radicals and fractions",
-model: "Model A"
+    academic-period: "Academic year 2023/2024",
+    academic-level: "1st Secondary Education",
+    academic-subject: "Mathematics",
+    number: "2nd Assessment 1st Exam",
+    content: "Radicals and fractions",
+    model: "Model A"
 ),
 ```
 This information can be consulted in the properties of the pdf document.

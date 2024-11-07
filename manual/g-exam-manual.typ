@@ -144,7 +144,7 @@ The following example asks a first question, with no sub-questions, with a score
 
 #pad(left: 1em)[
 ```typ-example
-#import "@preview/g-exam:0.3.0": *
+#import "@preview/g-exam:0.4.0": *
 #show: g-exam.with()
 
 #question(points: 2)[List prime numbers]
