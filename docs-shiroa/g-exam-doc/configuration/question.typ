@@ -12,7 +12,7 @@ Depending on the language we use, the decimal separator may change. To specify t
 rator we want to use, we use ‘decimal-separator’ with the values ‘.’ or ‘,’ as follows.
 
 ```typst
-#show: g-exam.with(
+#show: exam.with(
     decimal-separator: ",",
 )
 ```

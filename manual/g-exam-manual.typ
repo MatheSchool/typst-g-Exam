@@ -229,8 +229,8 @@ It can take the values 'en', 'es', 'de', 'fr', 'pt', 'it'.
 
 #pad(left: 1em)[
 ```typ-example
-#show: g-exam.with(
-  languaje: "es",
+#show: exam.with(
+  language: "es",
 )
 ```]
 

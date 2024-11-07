@@ -5,7 +5,9 @@
 = Changelog
 
 == v0.4.0
-- Change point parameter to points in g-question and g-subquestion.
+- Change g-exam for exam.
+- Change g-question and g-subquestion for question and subquestion.
+- Change point parameter to points in question and subquestion.
 - Change question-points-position paramet to question-points-position.
 - Include documentation.
 - Use paper by default.

@@ -154,7 +154,7 @@ You can specify the language in which you want the text to appear. To do this, w
 property. It can take the values ‘en’, ‘es’, ‘de’, ‘fr’, ‘pt’, ‘it’, ‘nl’.
 
 ```
-#show: g-exam.with(
-    languaje: "es",
+#show: exam.with(
+    language: "es",
 )
 ```
