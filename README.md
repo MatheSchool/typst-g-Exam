@@ -12,6 +12,7 @@ This template provides a way to generate exams. You can create questions and sub
 - List of clarifications.
 - Teacher's Watermark
 - Exam Model Watermark
+- Draft mode
 
 ## Usage 
 

@@ -104,16 +104,8 @@
     let __g-question-text-parameters = __g-question-text-parameters-state.final()
     let __decimal-separator = __g-decimal-separator.final()
 
-    // [#type(body)]
-    // [#body.fields()]
-    // [#type(body.children)]
-    // [#body.at("children", default: "j")]
-
-    // if body.children. 
-    if body.has("text") {
-      set par(hanging-indent: 1em)
-    }
-
+    set par(hanging-indent: 0.7em) //if body.has("text")
+    
     if __g-question-points-position == left {
       v(0.1em)
       {
