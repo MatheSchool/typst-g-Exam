@@ -6,7 +6,7 @@
  
 The exam questions will be indicated by the *question* command, in which we can indicate the score of the exam, which will automatically appear in the question table.
 
-If a question has subsubquestionsections, we can indicate them with the *subquestion* command. You can indicate the score in both question and subquestion.
+If a question has subsubquestion sections, we can indicate them with the *subquestion* command. You can indicate the score in both question and subquestion.
 
 ```typst
 
