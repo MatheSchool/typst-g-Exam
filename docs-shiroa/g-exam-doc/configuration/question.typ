@@ -11,26 +11,86 @@ If a question has subsubquestionsections, we can indicate them with the *subques
 ```typst
 
 #show: exam.with()
-#g-question(points: 2)[List prime numbers]
+#question(points: 2)[List prime numbers]
 #v(1fr)
 
-#g-question(points: 1)[Complete the following sentences]
+#question(points: 1)[Complete the following sentences]
 
-#g-subquestion[Don Quixote was written by ...]
+#subquestion[Don Quixote was written by ...]
 #v(1fr)
 
-#g-subquestion[The name of the continent we live on is ...]
+#subquestion[The name of the continent we live on is ...]
 #v(1fr)
+
 
 ```
 
-= Punctuation Decimal Separator
+== Question
+
+We can indicate the score of each question by the *points* property of the question.
+
+
+```typst
+
+#g-question(points: 2)[List prime numbers]
+
+
+```
+
+You can also indicate the position where the score appears to the *left* or *right*, using *points-position*.
+
+```typst
+
+#question(points: 2, points-position:right)[List prime numbers]
+
+
+```
+
+== Subquestion
+
+We can indicate the score of each question by the *points* property of the question. The score of the sub-question will be added to that of the question to which it belongs.
+
+
+```typst
+
+#subquestion(points: 2)[List prime numbers]
+
+
+```
+
+You can also indicate the position where the score appears to the *left* or *right*, using *points-position*.
+
+```typst
+
+#subquestion(points: 2, points-position:right)[List prime numbers]
+
+
+```
+
+== Points position
+
+Using the *question-points-position* property we can indicate the default position of the position where the score appears, *left* or *right*.
+
+
+```typst
+
+#show: exam.with(
+  question-points-position: right,
+)
+
+
+```
+
+== Punctuation Decimal Separator
 
 Depending on the language we use, the decimal separator may change. To specify the decimal sepa-
 rator we want to use, we use ‘decimal-separator’ with the values ‘.’ or ‘,’ as follows.
 
 ```typst
+
 #show: exam.with(
     decimal-separator: ",",
 )
+
+
 ```
