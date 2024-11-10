@@ -29,6 +29,21 @@ solutions, watermark with information about the exam model and teacher.
   )
 ]
 
+// #media.iframe(
+//   outer-width: 640pt,
+//   outer-height: 360pt,
+//   attributes: (
+//     src: "https://github.com/MatheSchool/typst-g-exam/blob/develop/docs-shiroa/g-exam-doc/assets/exam-table-content.pdf",
+//     scrolling: "no",
+//     border: "0",
+//     width: "100%",
+//     height: "100%",
+//     frameborder: "no",
+//     framespacing: "0",
+//     allowfullscreen: "true",
+//   ),
+// )
+
 === Source:
 
 ```typ

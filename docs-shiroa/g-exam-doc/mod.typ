@@ -1,4 +1,4 @@
-#import "book.typ": book-page, cross-link
+#import "book.typ": book-page, cross-link, media
 #import "../template/page.typ": *
 #import "../template/doc-code.typ": *
 
