@@ -46,7 +46,7 @@ This will change the sources of the table of contents, student information, head
 #show: exam.with(
 )
 
-#g-question(points: 2)[#lorem(30)]
+#question(points: 2)[#lorem(30)]
 
 
 ```
@@ -62,7 +62,7 @@ We can also change the size of the paper. Typst uses DIM A4 by default. If we wa
 #show: exam.with(
 )
 
-#g-question(points: 2)[#lorem(30)]
+#question(points: 2)[#lorem(30)]
 
 
 ```
