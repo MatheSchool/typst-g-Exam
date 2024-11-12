@@ -1,6 +1,6 @@
 #import "../src/lib.typ": *
 
-#show: g-exam.with(
+#show: exam.with(
   localization: (
     grade-table-queston: [Number of *questions*],
     grade-table-total: [Total _poinst_],

@@ -49,7 +49,7 @@ question is worth a total of four points in the scorecard.
 
 ```typst
 #import "@preview/g-exam:0.3.0": *
-#show: g-exam.with()
+#show: exam.with()
 
 #question(points: 2)[List prime numbers]
 #v(1fr)
@@ -69,7 +69,7 @@ If a pdf document is generated, the information will be saved in the document. S
 name, e-mail, watermark, exam information, …
 
 ```typst
-#show: g-exam.with(
+#show: exam.with(
 author: (
     name: "Leonhard Euler",
     email: "matheschool@outlook.es",

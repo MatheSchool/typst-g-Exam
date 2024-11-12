@@ -16,7 +16,7 @@ The following example will use a 16-point, double-spaced font for the questions.
 
 ```typst
 
-#show: g-exam.with(
+#show: exam.with(
     question-text-parameters: (size: 16pt, spacing:200%),
 )
 
@@ -27,7 +27,7 @@ We can use special fonts for dyslexia, as follows.
 
 ```typst
 
-#show: g-exam.with(
+#show: exam.with(
     question-text-parameters: (size: 16pt, spacing:200%, font:"OpenDyslexic),
 )
 

@@ -1,6 +1,6 @@
 #import "../../src/lib.typ": *
 
-#show: g-exam.with()
+#show: exam.with()
 
 #g-subquestion(points: 1)[Sub question 1]
 

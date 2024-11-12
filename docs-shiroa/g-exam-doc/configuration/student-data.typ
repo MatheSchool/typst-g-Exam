@@ -15,7 +15,10 @@ Values can be:
 The following example will display student information on the ﬁrst page.
 
 ```typst
-#show: g-exam.with(
+
+#show: exam.with(
     show-studen-data: "first-page",
 )
+
+
 ```

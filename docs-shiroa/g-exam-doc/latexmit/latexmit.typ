@@ -17,7 +17,7 @@ Examples of LaTex Mit exam template.
 // <!-- {% highlight typ %}
 // #import "@preview/g-exam:0.4.0": *
 
-// #show: g-exam.with(
+// #show: exam.with(
 //   author: (
 //     name: "Ferdinand Eisenstein", 
 //     email: "matheschool@outlook.es", 
@@ -28,7 +28,7 @@ Examples of LaTex Mit exam template.
 // ```python
 // #import "@preview/g-exam:0.4.0": *
 
-// #show: g-exam.with(
+// #show: exam.with(
 //   author: (
 //     name: "Ferdinand Eisenstein", 
 //     email: "matheschool@outlook.es", 
@@ -39,7 +39,7 @@ Examples of LaTex Mit exam template.
 // ```typst
 // #import "@preview/g-exam:0.4.0": *
 
-// #show: g-exam.with(
+// #show: exam.with(
 //   author: (
 //     name: "Ferdinand Eisenstein", 
 //     email: "matheschool@outlook.es", 
