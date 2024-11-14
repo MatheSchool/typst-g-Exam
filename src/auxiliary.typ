@@ -10,11 +10,15 @@
       //   date: first-page
       // ),
       show-student-number: 1,
-    ) = {
+  ) = {
     
-    let family-label = [
-       #context __g-localization.final().family-name: #box(width: 2fr, repeat[.])
-    ]
+  // [#page \ ]
+  // [#show-student-data \ ]
+  // [#type(show-student-data) \ ]
+
+  let family-label = [
+      #context __g-localization.final().family-name: #box(width: 2fr, repeat[.])
+  ]
 
   let give-label = [
     #context __g-localization.final().given-name: #box(width:1fr, repeat[.])
@@ -27,7 +31,7 @@
   let date-label = [
     #context __g-localization.final().date: #box(width:4cm, repeat[.])
   ]
-
+  
   if type(show-student-data) != "dictionary" {
     if type(show-student-data) == "array" and page != "first" {
       return
@@ -44,6 +48,11 @@
     if show-student-data == "odd-pages" and not(page == "first" or page == "odd") {
       return
     }
+
+    if show-student-data != "first-page" and page != "first" {
+      group-label = []
+      date-label = []
+    }
   }
   else {
     let family-name-value = show-student-data.at("family-name", default: "first-page")
@@ -52,19 +61,19 @@
     let date-value = show-student-data.at("date", default: "first-page")
 
     if family-name-value == false or (family-name-value == "first-page" and page != "first") or (family-name-value == "odd-pages" and not(page == "first" or page == "odd")) {
-      family-label =[]
+      family-label = []
     }
 
     if give-name-value == false or (give-name-value == "first-page" and page != "first") or (give-name-value == "odd-pages" and not(page == "first" or page == "odd")) {
-      give-label =[]
+      give-label = []
     }
-
+    
     if group-value == false or (group-value == "first-page" and page != "first") or (group-value == "odd-pages" and not(page == "first" or page == "odd")) {
-      group-label =[]
+      group-label = []
     }
 
     if date-value == false or (date-value == "first-page" and page != "first") or (date-value == "odd-pages" and not(page == "first" or page == "odd")) {
-      date-label =[]
+      date-label = []
     }
   }
 
