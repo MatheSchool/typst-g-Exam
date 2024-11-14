@@ -51,14 +51,14 @@ jobs:
             fi
           done
 
-      - name: Delete Doc
-        run: |
-          rm -rf ./manual/*.pdf
+      # - name: Delete Doc
+      #   run: |
+      #     rm -rf ./manual/*.pdf
 
-      - name: Compile documentation to PDF
-        shell: bash
-        run: |
-          typst compile ./manual/g-exam-manual.typ --root .
+      # - name: Compile documentation to PDF
+      #   shell: bash
+      #   run: |
+      #     typst compile ./manual/g-exam-manual.typ --root .
 
       - name: Upload examples PDF file
         uses: actions/upload-artifact@v4
@@ -72,8 +72,8 @@ jobs:
           name: test-g-exam
           path: ./test/**/*.pdf
 
-      - name: Upload documentation PDF file
-        uses: actions/upload-artifact@v4
-        with:
-          name: document-g-exam
-          path: ./manual/*.pdf
+      # - name: Upload documentation PDF file
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: document-g-exam
+      #     path: ./manual/*.pdf
