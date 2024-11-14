@@ -1,6 +1,6 @@
-#import "@preview/g-exam:0.4.0": g-exam, g-question, g-subquestion
+#import "@preview/g-exam:0.4.0": *
 
-#show: g-exam.with(
+#show: exam.with(
   school: (
     name: "My School",
     logo: image("./logo.png")

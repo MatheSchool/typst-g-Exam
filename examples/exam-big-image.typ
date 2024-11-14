@@ -28,18 +28,18 @@
   clarifications: "Answer the questions in the spaces provided. If you run out of room for an answer, continue on the back of the page."
 )
 
-#g-question[Given the equation $x^n + y^n = z^n$ for $(x,y,z)$ and $n$ positive integers.] 
+#question[Given the equation $x^n + y^n = z^n$ for $(x,y,z)$ and $n$ positive integers.] 
 
 #image("./logo.png"),
 
-#g-subquestion[For what values of $n$ is the statement in the previous question true?]
+#subquestion[For what values of $n$ is the statement in the previous question true?]
 #v(1fr)
-#g-subquestion[For $n=2$ there's a theorem with a special name. What's that name?] 
+#subquestion[For $n=2$ there's a theorem with a special name. What's that name?] 
 #v(1fr)
 
 #g-subquestion[What famous mathematician had an elegant proof for this theorem but
 there was not enough space in the margin to write it down?].
 #v(1fr)
 
-#g-question[Prove that the real part of all non-trivial zeros of the function $zeta(z) "is" 1/2$].
+#question[Prove that the real part of all non-trivial zeros of the function $zeta(z) "is" 1/2$].
 #v(1fr)

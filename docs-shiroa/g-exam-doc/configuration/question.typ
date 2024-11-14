@@ -32,7 +32,7 @@ We can indicate the score of each question by the *points* property of the quest
 
 ```typst
 
-#g-question(points: 2)[List prime numbers]
+#question(points: 2)[List prime numbers]
 
 
 ```

@@ -16,7 +16,7 @@ The following example will use a 16-point, double-spaced font for the questions.
 
 ```typst
 
-#show: g-exam.with(
+#show: exam.with(
     question-text-parameters: (size: 16pt, spacing:200%),
 )
 
@@ -27,7 +27,7 @@ We can use special fonts for dyslexia, as follows.
 
 ```typst
 
-#show: g-exam.with(
+#show: exam.with(
     question-text-parameters: (size: 16pt, spacing:200%, font:"OpenDyslexic),
 )
 
@@ -46,7 +46,7 @@ This will change the sources of the table of contents, student information, head
 #show: exam.with(
 )
 
-#g-question(points: 2)[#lorem(30)]
+#question(points: 2)[#lorem(30)]
 
 
 ```
@@ -62,7 +62,7 @@ We can also change the size of the paper. Typst uses DIM A4 by default. If we wa
 #show: exam.with(
 )
 
-#g-question(points: 2)[#lorem(30)]
+#question(points: 2)[#lorem(30)]
 
 
 ```

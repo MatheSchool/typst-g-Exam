@@ -34,7 +34,7 @@ To enter the questions, use the q-question, followed by the text of the question
 score of the question by entering the parameter point.
 
 ```typst
-#g-question(points: 2)[Question text.]
+#question(points: 2)[Question text.]
 #v(1fr)
 ```
 
@@ -49,17 +49,17 @@ question is worth a total of four points in the scorecard.
 
 ```typst
 #import "@preview/g-exam:0.3.0": *
-#show: g-exam.with()
+#show: exam.with()
 
-#g-question(points: 2)[List prime numbers]
+#question(points: 2)[List prime numbers]
 #v(1fr)
 
-#g-question[Complete the following sentences]
+#question[Complete the following sentences]
 
-#g-subquestion(points: 2)[Don Quixote was written by ...]
+#subquestion(points: 2)[Don Quixote was written by ...]
 #v(1fr)
 
-#g-subquestion(points: 2)[The name of the continent we live on is ...]
+#subquestion(points: 2)[The name of the continent we live on is ...]
 #v(1fr)
 ```
 
@@ -69,7 +69,7 @@ If a pdf document is generated, the information will be saved in the document. S
 name, e-mail, watermark, exam information, …
 
 ```typst
-#show: g-exam.with(
+#show: exam.with(
 author: (
     name: "Leonhard Euler",
     email: "matheschool@outlook.es",
