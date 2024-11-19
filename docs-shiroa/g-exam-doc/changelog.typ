@@ -5,10 +5,12 @@
 = Changelog
 
 == v0.4.1
+
 - Fix student data.
 - Fix Indenting subquestion.
   
 == v0.4.0
+
 - Change g-exam for exam.
 - Change g-question and g-subquestion for question and subquestion.
 - Change point parameter to points in question and subquestion.
