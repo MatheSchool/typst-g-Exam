@@ -61,28 +61,19 @@
     assert(group-value in (none, true, false, "first-page", "all-pages", "odd-pages"), message: "Invalid group-value value in show-student-data")
     assert(date-value in (none, true, false, "first-page", "all-pages", "odd-pages"), message: "Invalid date-value value in show-student-data")
 
-    // [#family-name-value - #page \ ]
-    // if page == "first" or page == "pair" {
-    //   [si \ ]
-    // }
-
     if family-name-value == false or (family-name-value == "first-page" and page != "first") or (family-name-value == "odd-pages" and not(page == "first" or page == "odd")) {
-      // [2-a #family-name-value - #page \ ]
       family-label = []
     }
 
     if give-name-value == false or (give-name-value == "first-page" and page != "first") or (give-name-value == "odd-pages" and not(page == "first" or page == "odd")) {
-      // [2-b #give-name-value - #page \ ]
       give-label = []
     }
     
     if group-value == false or (group-value == "first-page" and page != "first") or (group-value == "odd-pages" and not(page == "first" or page == "odd")) {
-      // [2-c #group-value - #page \ ]
       group-label = []
     }
 
     if date-value == false or (date-value == "first-page" and page != "first") or (date-value == "odd-pages" and not(page == "first" or page == "odd")) {
-      // [2-d #date-value - #page \ ]
       date-label = []
     }
   }

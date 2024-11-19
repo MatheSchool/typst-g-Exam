@@ -48,7 +48,7 @@ solutions, watermark with information about the exam model and teacher.
 
 ```typ
 
-#import "@preview/g-exam:0.4.0": *
+#import "@preview/g-exam:0.4.1": *
 
 #show: exam.with(
   school: (

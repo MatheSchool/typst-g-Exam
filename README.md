@@ -27,7 +27,7 @@ To use this package, simply add the following code to your document:
 #### Source:
 
 ```typ
-#import "@preview/g-exam:0.4.0": *
+#import "@preview/g-exam:0.4.1": *
 
 #show: exam.with(
   school: (
@@ -58,6 +58,10 @@ To use this package, simply add the following code to your document:
 ```
 
 ## Changelog
+
+### v0.4.1
+- Fix student data.
+- Fix Indenting subquestion.
 
 ### v0.4.0
 - Change g-exam for exam.
