@@ -27,7 +27,7 @@ To use this package, simply add the following code to your document:
 #### Source:
 
 ```typ
-#import "@preview/g-exam:0.4.1": *
+#import "@preview/g-exam:0.4.2": *
 
 #show: exam.with(
   school: (
@@ -58,6 +58,9 @@ To use this package, simply add the following code to your document:
 ```
 
 ## Changelog
+
+### v0.4.2
+- Fix lang tag.
 
 ### v0.4.1
 - Fix student data.

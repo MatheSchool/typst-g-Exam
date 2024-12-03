@@ -4,6 +4,10 @@
 
 = Changelog
 
+== v0.4.2
+
+- Fix lang tag.
+
 == v0.4.1
 
 - Fix student data.
