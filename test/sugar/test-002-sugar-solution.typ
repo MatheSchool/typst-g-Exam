@@ -2,6 +2,7 @@
 
 #show: exam.with(
   show-grade-table: false,
+  show-student-data:false,
   question-text-parameters: (size: 18pt, font:"OpenDyslexic")
 )
 
