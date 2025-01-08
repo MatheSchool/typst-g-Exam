@@ -326,16 +326,16 @@
                     #if type(school) == "dictionary" [
                       #school.at("name", default : none) \
                     ]
-                    #exam-info.academic-period \
-                    #exam-info.academic-level
+                    #exam-info.at("academic-period", default:none) \
+                    #exam-info.at("academic-level", default:none) \
                   ],
                   align(center + top)[
                   // #exam-info.number #exam-info.content \
                   ],
                   align(right + top)[
                     #exam-info.at("academic-subject", default: none)  \  
-                    #exam-info.number \
-                    #exam-info.content 
+                    #exam-info.at("number", default:none) \
+                    #exam-info.at("content", default:none) \
                   ],
                 ),
                 line(length: 100%, stroke: 1pt + gray),
@@ -356,16 +356,16 @@
               #if type(school) == "dictionary" [
                 #school.at("name", default : none) \
               ]
-              #exam-info.academic-period \
-              #exam-info.academic-level
+              #exam-info.at("academic-period", default: none)  \ 
+              #exam-info.at("academic-level", default: none)  \ 
             ], 
             align(center + top)[
               // #exam-info.number #exam-info.content \
             ],
             align(right + top)[
               #exam-info.at("academic-subject", default: none) \
-              #exam-info.number \
-              #exam-info.content 
+              #exam-info.at("number", default: none) \
+              #exam-info.at("content", default: none) \ 
             ]
           )
           line(length: 100%, stroke: 1pt + gray) 
@@ -383,7 +383,7 @@
               #if type(school) == "dictionary" [
                 #school.at("name", default : none) \
               ] 
-              #exam-info.academic-period \
+              #exam-info.at("academic-period", default: none)  \ 
               #exam-info.academic-level
             ], 
             align(center + top)[
@@ -391,8 +391,8 @@
             ],
             align(right + top)[
               #exam-info.at("academic-subject", default: none) \
-              #exam-info.number \
-              #exam-info.content \
+              #exam-info.at("number", default: none) \
+              #exam-info.at("content", default: none) \
             ]
           )
           line(length: 100%, stroke: 1pt + gray)
