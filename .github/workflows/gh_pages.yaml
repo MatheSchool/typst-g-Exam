@@ -39,9 +39,9 @@ jobs:
       - name: Download & install shiroa
         # working-directory: ./docs-shiroa
         run: |
-          curl -L https://github.com/Myriad-Dreamin/shiroa/releases/download/v0.2.0-nightly5/shiroa-x86_64-unknown-linux-gnu.tar.gz | tar -xvz
-          chmod +x shiroa-x86_64-unknown-linux-gnu/bin/shiroa
-          sudo cp shiroa-x86_64-unknown-linux-gnu/bin/shiroa /usr/bin/shiroa
+          curl -L https://github.com/Myriad-Dreamin/shiroa/releases/download/v0.2.0/shiroa-x86_64-unknown-linux-gnu.tar.gz | tar -xvz
+          chmod +x shiroa-x86_64-unknown-linux-gnu/shiroa
+          sudo cp shiroa-x86_64-unknown-linux-gnu/shiroa /usr/bin/shiroa
 
       # - name: Build Book
       #   working-directory: ./docs-shiroa

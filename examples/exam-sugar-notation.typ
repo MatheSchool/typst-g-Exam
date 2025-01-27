@@ -1,6 +1,8 @@
 #import "../src/lib.typ": *
 
-#show: exam.with()
+#show: exam.with(
+  
+)
 
 #question(points:.2)[Question]
 

@@ -3,7 +3,8 @@
 #show: exam.with(
   // question-points-position: right,
   // decimal-separator: "."
-  // show-grade-table: false,
+  show-student-data:false,
+  show-grade-table: false,
   // show-solution: false
   // question-text-parameters: (size: 18pt, font:"OpenDyslexic")
 )
