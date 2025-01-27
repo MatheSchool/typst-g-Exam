@@ -17,7 +17,7 @@
     academic-subject: "Mathematics",
     number: "2nd Assessment 1st Exam",
     content: "Radicals and fractions",
-    model: "Model A"
+    model: [Model $delta$]
   ),
   
   language: "en",

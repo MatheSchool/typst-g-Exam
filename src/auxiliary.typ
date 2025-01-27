@@ -211,6 +211,10 @@
     if exam-info.at("number", default: none) != none { document-name += " " + exam-info.number }
     if exam-info.at("model", default: none) != none { document-name += " " + exam-info.model }
 
+    if type(document-name) == "string"{
+      document-name = document-name.trim(" ")
+    }
+    
     return document-name
 }
 

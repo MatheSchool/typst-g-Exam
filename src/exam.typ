@@ -120,7 +120,7 @@
   )
 
   set document(
-    title: __document-name(exam-info: exam-info).trim(" "),
+    title: __document-name(exam-info: exam-info),
     author: author.name, 
     date: date
   )
